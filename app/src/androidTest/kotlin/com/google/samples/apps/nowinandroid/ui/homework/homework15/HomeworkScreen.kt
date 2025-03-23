@@ -17,34 +17,42 @@
 package com.google.samples.apps.nowinandroid.ui.homework.homework15
 
 import androidx.compose.ui.test.SemanticsNodeInteractionsProvider
+import com.google.samples.apps.nowinandroid.core.designsystem.СD.DONEBUTTON
+import com.google.samples.apps.nowinandroid.core.designsystem.СD.PODZOGOLOVOK
+import com.google.samples.apps.nowinandroid.core.designsystem.СD.POLEFIELD
 import io.github.kakaocup.compose.node.element.ComposeScreen
 import io.github.kakaocup.compose.node.element.KNode
+import com.google.samples.apps.nowinandroid.core.designsystem.СD.SEARCHICON
+import com.google.samples.apps.nowinandroid.core.designsystem.СD.SHESTERENKA
+import com.google.samples.apps.nowinandroid.core.designsystem.СD.TITLE
+import com.google.samples.apps.nowinandroid.core.designsystem.СD.ZAGOLOVOK
+import com.google.samples.apps.nowinandroid.core.designsystem.СD.NAZADBUTTON as NAZADBUTTON
 
 class HomeworkScreen(semanticsProvider: SemanticsNodeInteractionsProvider) :ComposeScreen<HomeworkScreen>(
     semanticsProvider) {
 
     val topBarTitle = child<KNode> {
-        hasTestTag("NiaTopAppTitle")
+        hasTestTag(TITLE)
     }
     val searchButton = child<KNode> {
-        hasTestTag("searchIcon")
+        hasTestTag(SEARCHICON)
     }
     val shesterenka = child<KNode> {
-        hasTestTag("shesterenka")
+        hasTestTag(SHESTERENKA)
     }
     val zagolovok = child<KNode> {
-        hasTestTag("zagolovok")
+        hasTestTag(ZAGOLOVOK)
     }
     val podzogolovok = child<KNode> {
-        hasTestTag("podzogolovok")
+        hasTestTag(PODZOGOLOVOK)
     }
     val done = child<KNode> {
-        hasTestTag("done")
+        hasTestTag(DONEBUTTON)
     }
     val nazad = child<KNode> {
-        hasTestTag("nazad")
+        hasTestTag(NAZADBUTTON)
     }
     val pole = child<KNode> {
-        hasTestTag("pole")
+        hasTestTag(POLEFIELD)
     }
 }

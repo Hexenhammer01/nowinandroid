@@ -14,26 +14,37 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.nowinandroid.ui.homework.homework14
+package com.google.samples.apps.nowinandroid.ui.homework.homework15
 
 import androidx.compose.ui.test.SemanticsNodeInteractionsProvider
-import com.google.samples.apps.nowinandroid.MainActivity
 import io.github.kakaocup.compose.node.element.ComposeScreen
 import io.github.kakaocup.compose.node.element.KNode
 
-class MainScreen(semanticsProvider: SemanticsNodeInteractionsProvider) :ComposeScreen<MainScreen>(
-    semanticsProvider
-) {
-    val doneButton = KNode(semanticsProvider){
-        hasText("Done")
+class HomeworkScreen(semanticsProvider: SemanticsNodeInteractionsProvider) :ComposeScreen<HomeworkScreen>(
+    semanticsProvider) {
+
+    val topBarTitle = child<KNode> {
+        hasTestTag("NiaTopAppTitle")
     }
-//    val topBarTitle = child<KNode> {
-//        hasTestTag("NiaTopAppTitle")
-//    }
-//    val searchButton = child<KNode> {
-//        hasTestTag("searchIcon")
-//    }
-//    val shesterenka = child<KNode> {
-//        hasTestTag("shesterenka")
-//    }
+    val searchButton = child<KNode> {
+        hasTestTag("searchIcon")
+    }
+    val shesterenka = child<KNode> {
+        hasTestTag("shesterenka")
+    }
+    val zagolovok = child<KNode> {
+        hasTestTag("zagolovok")
+    }
+    val podzogolovok = child<KNode> {
+        hasTestTag("podzogolovok")
+    }
+    val done = child<KNode> {
+        hasTestTag("done")
+    }
+    val nazad = child<KNode> {
+        hasTestTag("nazad")
+    }
+    val pole = child<KNode> {
+        hasTestTag("pole")
+    }
 }

@@ -38,6 +38,16 @@ class MainScreenTest:TestCase(Kaspresso.Builder.withComposeSupport()) {
                     doneButton.assertTextContains("Done")
                 }
             }
+//            step("Проверка текста"){
+//                mainScreen{
+//                    topBarTitle.assertTextEquals("Now in Android")
+//                }
+//            }
+//            step("топ бар") {
+//                mainScreen{
+//                    searchButton.assertIsDisplayed()
+//                }
+//            }
         }
     }
 }

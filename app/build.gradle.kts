@@ -126,13 +126,13 @@ dependencies {
     androidTestImplementation(projects.core.testing)
     androidTestImplementation(projects.core.dataTest)
     androidTestImplementation(projects.core.datastoreTest)
-//    androidTestImplementation(libs.androidx.test.espresso.core)
+    androidTestImplementation(libs.androidx.test.espresso.core)
     androidTestImplementation(libs.androidx.compose.ui.test)
     androidTestImplementation(libs.hilt.android.testing)
     androidTestImplementation(libs.kotlin.test)
 
     baselineProfile(projects.benchmarks)
-    implementation ("com.google.android.material:material:1.10.0")
+    implementation("com.google.android.material:material:1.10.0")
     androidTestImplementation("com.kaspersky.android-components:kaspresso-compose-support:1.6.0") {
         exclude(module = "protobuf-lite")
     }

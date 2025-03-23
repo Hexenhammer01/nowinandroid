@@ -274,12 +274,14 @@ private fun LazyStaggeredGridScope.onboarding(
                         textAlign = TextAlign.Center,
                         modifier = Modifier
                             .fillMaxWidth()
-                            .padding(top = 24.dp),
+                            .padding(top = 24.dp)
+                            .testTag("zagolovok"),
                         style = MaterialTheme.typography.titleMedium,
                     )
                     Text(
                         text = stringResource(R.string.feature_foryou_onboarding_guidance_subtitle),
                         modifier = Modifier
+                            .testTag("podzogolovok")
                             .fillMaxWidth()
                             .padding(top = 8.dp, start = 24.dp, end = 24.dp),
                         textAlign = TextAlign.Center,
